@@ -1,0 +1,10 @@
+<h1>Doses</h1>
+
+<%= link_to "New dose", new_dose_path %>
+
+<% @doses.each do |dose| %>
+  <%= link_to dose_path(dose) do %>
+    <h2><%= dose.description %></h2>
+  <% end %>
+  <hr>
+<% end %>
