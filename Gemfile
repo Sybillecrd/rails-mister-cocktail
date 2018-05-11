@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'simple_form'
 gem 'figaro'
+gem 'cloudinary'
 
 
 # Use ActiveStorage variant
