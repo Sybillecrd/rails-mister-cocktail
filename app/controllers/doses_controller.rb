@@ -3,6 +3,7 @@ class DosesController < ApplicationController
 
   def index
     @doses = Dose.all
+    @cocktail = Cocktail.find(params[:cocktail_id])
   end
 
   def new
@@ -31,7 +32,7 @@ class DosesController < ApplicationController
 
   def destroy
     @dose.destroy
-    redirect_to doses_path
+    redirect_to cocktails_path
   end
 
   private
